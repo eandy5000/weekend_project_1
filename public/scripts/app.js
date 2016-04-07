@@ -1,0 +1,1 @@
+function formSweep(){var e={};$.each($("#employeeForm").serializeArray(),function(o,m){e[m.name]=m.value}),employees.push(e),console.log(employees),$("#employeeForm")[0].reset()}function appendEmployee(){}var employees=[];$(document).ready(function(){$("#employeeForm").submit(function(e){e.preventDefault(),formSweep()})});
